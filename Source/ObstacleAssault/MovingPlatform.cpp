@@ -11,28 +11,13 @@ AMovingPlatform::AMovingPlatform()
 
 }
 
-int MyTestFunction(float MyFloatParam, FString MyStringParam)
-{
-	UE_LOG(LogTemp, Display, TEXT("MyFloatParam is %f"), MyFloatParam);
-
-	UE_LOG(LogTemp, Display, TEXT("MyStringParam is %s"), *MyStringParam);
-
-	return 40;
-
-}
-
 // Called when the game starts or when spawned
 void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 
-	FString Myname = GetName();
-	int ReturnValue = MyTestFunction(3.5f, Myname);
-	UE_LOG(LogTemp, Display, TEXT("Return value is %d"), ReturnValue);
-
 	StartLocation = GetActorLocation();
-			
-	}
+}
 
 // Called every frame
 void AMovingPlatform::Tick(float DeltaTime)
