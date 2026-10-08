@@ -1,0 +1,26 @@
+# Unreal Engine — generated and binary folders
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
+DDC/
+Script/
+# Content is not published: the course and template assets are not mine to redistribute
+Content/
+
+# Visual Studio / Rider
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
